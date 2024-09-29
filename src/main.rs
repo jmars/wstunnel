@@ -701,6 +701,7 @@ fn parse_server_url(arg: &str) -> Result<Url, io::Error> {
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let args = Wstunnel::parse();
+    rustls_post_quantum::provider().install_default().unwrap();
 
     // Setup logging
     let mut env_filter = EnvFilter::builder().parse(&args.log_lvl).expect("Invalid log level");

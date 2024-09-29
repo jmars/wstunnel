@@ -2090,6 +2090,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc0a2ce646f8655401bb81e7927b812614bd5d91dbc968696be50603510fcaf0"
 
 [[package]]
+name = "rustls-post-quantum"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b2c8624d1685fb5f6f72bc10f71a3a96c80a3832225fddd4acb8f28a1a335b33"
+dependencies = [
+ "aws-lc-rs",
+ "rustls 0.23.12",
+]
+
+[[package]]
 name = "rustls-webpki"
 version = "0.101.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3138,6 +3148,7 @@ dependencies = [
  "regex",
  "rustls-native-certs 0.8.0",
  "rustls-pemfile 2.1.3",
+ "rustls-post-quantum",
  "scopeguard",
  "serde",
  "serde_regex",
