@@ -71,6 +71,8 @@ async fn main() -> anyhow::Result<()> {
         .with_ansi(args.no_color.is_none())
         .with_env_filter(env_filter);
 
+    rustls_post_quantum::provider().install_default().unwrap();
+
     // stdio tunnel capture stdio, so need to log into stderr
     if let Commands::Client(args) = &args.commands {
         if args
