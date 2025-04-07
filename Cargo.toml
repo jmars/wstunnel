@@ -23,7 +23,7 @@ futures-util = { version = "0.3.31" }
 ppp = { version = "2.3.0", features = [] }
 async-channel = { version = "2.3.1", features = [] }
 arc-swap = { version = "1.7.1", features = [] }
-rustls-post-quantum = { version = "0.2.1" }
+rustls-post-quantum = { version = "0.2.2" }
 fdlimit = "0.3.0"
 
 # For config file parsing
